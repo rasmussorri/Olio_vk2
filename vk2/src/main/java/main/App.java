@@ -34,9 +34,9 @@ public class App
                     car.status();
                     break;
                 case 2:
-                    System.out.println( "Anna uusi auton merkki: " );
+                    System.out.print( "Anna uusi auton merkki: " );
                     car.setBrand(sc.nextLine());
-                    System.out.println( "Anna uusi auton malli: " );
+                    System.out.print( "Anna uusi auton malli: " );
                     car.setModel(sc.nextLine());
                     break;
                 case 3:
