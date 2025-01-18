@@ -37,4 +37,8 @@ public class Car {
             speed = 0;
         }
     }
+
+    public void status() {
+        System.out.println("Auto: " + brand + " " + model + ", Nopeus: " + speed + " km/h");
+    }
 }

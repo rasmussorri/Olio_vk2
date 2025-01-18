@@ -24,11 +24,10 @@ public class App
             if(sc.hasNext()) {
                 int i = 0;
                 i = Integer.parseInt(sc.nextLine());
-                //sc.nextLine();
 
             switch(i) {
                 case 1:
-                    System.out.println("Auto: " + car.getBrand() + " " + car.getModel() + ", Nopeus: " + car.getSpeed() + " km/h");
+                    car.status();
                     break;
                 case 2:
                     System.out.println( "Anna uusi auton merkki: " );
@@ -38,14 +37,28 @@ public class App
                     break;
                 case 3:
                     System.out.println("Kuinka monta km/h haluat kiihdyttää? ");
-                    car.carAccelerate(sc.nextInt());
-                    sc.nextLine();
-                    break;
+                    int speed = sc.nextInt();
+                    if (speed >= 0) {
+                        car.carAccelerate(speed);
+                        sc.nextLine();
+                        break;
+                    } else {
+                        System.out.println("Nopeuden täytyy olla positiivinen luku.");
+                        sc.nextLine();
+                        break;
+                    }
                 case 4:
                     System.out.println("Kuinka monta km/h haluat hidastaa? ");
-                    car.carBrake(sc.nextInt());
-                    sc.nextLine();
-                    break;
+                    int brake = sc.nextInt();
+                    if (brake >= 0) {
+                        car.carBrake(brake);
+                        sc.nextLine();
+                        break;
+                    } else {
+                        System.out.println("Nopeuden täytyy olla positiivinen luku.");
+                        sc.nextLine();
+                        break;
+                    }
                 case 0:
                     System.out.println("Kiitos ohjelman käytöstä.");
                     exit = true;
