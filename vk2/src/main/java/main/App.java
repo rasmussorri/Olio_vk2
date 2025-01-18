@@ -43,7 +43,7 @@ public class App
                     System.out.println("Kuinka monta km/h haluat kiihdyttää? ");
                     int speed = sc.nextInt();
                     if (speed >= 0) {
-                        car.carAccelerate(speed);
+                        car.accelerate(speed);
                         sc.nextLine();
                         break;
                     } else {
@@ -55,7 +55,7 @@ public class App
                     System.out.println("Kuinka monta km/h haluat hidastaa? ");
                     int brake = sc.nextInt();
                     if (brake >= 0) {
-                        car.carBrake(brake);
+                        car.deaccelerate(brake);
                         sc.nextLine();
                         break;
                     } else {

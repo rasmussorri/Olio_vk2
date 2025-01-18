@@ -36,11 +36,11 @@ public class Car {
         this.model = model;
     }
 
-    public void carAccelerate(int number) {
+    public void accelerate(int number) {
         speed += number;;
     }
 
-    public void carBrake(int number) {
+    public void deaccelerate(int number) {
         speed -= number;
         if (speed < 0) {
             speed = 0;
