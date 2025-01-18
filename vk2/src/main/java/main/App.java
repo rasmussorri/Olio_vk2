@@ -2,9 +2,13 @@ package main;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
+/*
+ * Name of program: Car
+ * Name of file: App.java
+ * Maker: Rasmus Sorri
+ * This program is a simple car simulator. It asks for the brand and model of the car and then lets the user accelerate or brake the car.
+ * Last modified: 2025-01-18
+ * Written with Visual Studio Code
  */
 public class App 
 {

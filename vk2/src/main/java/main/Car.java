@@ -1,3 +1,12 @@
+/*
+ * Name of program: Car
+ * Name of file: Car.java
+ * Maker: Rasmus Sorri
+ * This class makes and operates a car object.
+ * Last modified: 2025-01-18
+ * Written with Visual Studio Code
+ */
+
 package main;
 
 public class Car {
