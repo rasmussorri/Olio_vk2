@@ -40,7 +40,7 @@ public class App
                     car.setModel(sc.nextLine());
                     break;
                 case 3:
-                    System.out.println("Kuinka monta km/h haluat kiihdyttää? ");
+                    System.out.print("Kuinka monta km/h haluat kiihdyttää? ");
                     int speed = sc.nextInt();
                     if (speed >= 0) {
                         car.accelerate(speed);
@@ -52,7 +52,7 @@ public class App
                         break;
                     }
                 case 4:
-                    System.out.println("Kuinka monta km/h haluat hidastaa? ");
+                    System.out.print("Kuinka monta km/h haluat hidastaa? ");
                     int brake = sc.nextInt();
                     if (brake >= 0) {
                         car.deaccelerate(brake);
